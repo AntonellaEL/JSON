@@ -1,12 +1,17 @@
-async function logTitle() {
-    const response = await fetch("src/js/async/data.json");
-    const curso = await response.json();
-    console.log(curso);
+const uri= '/src/js/async/data.json'
+
+async function dataTitle() {
+  const response = await fetch(uri);
+  const curso = await response.json();
+
+ for (let index = 0; index < curso.results.length; index++) {
+     console.log(curso.results[index].title);
   }
 
-  fetch('src/js/async/data.json') 
-  .then(response => response.json()) 
-  .then(data => { data.results.forEach(item => 
-    { console.log(item.title); }); }) 
-.catch(error => console.error('Error fetching data:', error));
+   console.log(curso.results);
+  
+
+}
+ 
+dataTitle();
 
