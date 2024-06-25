@@ -1,7 +1,11 @@
 ##Crear archivo DATA.JSON!
+
 Práctica
+
 1.- Usa este JSON para imprimir en consola del navegador la lista de títulos de los ‘Todos’.
+
 {
+    
     "results": [
         {
             "title": "Estudiar Js",
